@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="other.css">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <title>Document</title>
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <abbr title="Rock Paper Scissors Lizard Spock"><button class="other-game"
+            onclick="location.href='index.html'">CLASSIC</button></abbr>
+    <div class="panel" id="panel"></div>
+    <div class="panel" id="panel-2"></div>
+    <div class="main-container">
+        <div class="header-container flex">
+            <img src="./images/logo-bonus.svg" alt="logo-bonus">
+            <div class="score-container">
+                <span>SCORE</span>
+                <h1 id="score">0</h1>
+            </div>
+        </div>
+        <div class="text-container flex" id="pick-text">
+            <h2>YOU PICKED</h2>
+            <h2>THE HOUSE PICKED</h2>
+        </div>
+        <div class="game-container flex" id="game">
+            <div class="first">
+                <div class="spock border" id="spock">
+                    <button class="btn">
+                        <img src="./images/icon-spock.svg" alt="icon-spock">
+                    </button>
+                </div>
+            </div>
+            <div class="second flex">
+                <div class="scissors border" id="scissors">
+                    <button class="btn">
+                        <img src="./images/icon-scissors.svg" alt="icon-scissors">
+                    </button>
+                </div>
+                <div class="paper border" id="paper">
+                    <button class="btn">
+                        <img src="./images/icon-paper.svg" alt="icon-paper">
+                    </button>
+                </div>
+            </div>
+            <div class="third flex">
+                <div class="lizard border" id="lizard">
+                    <button class="btn">
+                        <img src="./images/icon-lizard.svg" alt="icon-lizard">
+                    </button>
+                </div>
+                <div class="rock border" id="rock">
+                    <button class="btn">
+                        <img src="./images/icon-rock.svg" alt="icon-rock">
+                    </button>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="win-container" id="win-panel">
+                <h2 id="win-title"></h2>
+                <button id="re">PLAY AGAIN</button>
+            </div>
+            <div class="computer" id="computer">
+                <div class="paper border" id="comp-paper">
+                    <button class="btn">
+                        <img src="./images/icon-paper.svg" alt="icon-paper">
+                    </button>
+                </div>
+                <div class="scissors border" id="comp-scissors">
+                    <button class="btn">
+                        <img src="./images/icon-scissors.svg" alt="icon-scissors">
+                    </button>
+                </div>
+                <div class="rock border" id="comp-rock">
+                    <button class="btn">
+                        <img src="./images/icon-rock.svg" alt="icon-rock">
+                    </button>
+                </div>
+                <div class="lizard border" id="comp-lizard">
+                    <button class="btn">
+                        <img src="./images/icon-lizard.svg" alt="icon-lizard">
+                    </button>
+                </div>
+                <div class="spock border" id="comp-spock">
+                    <button class="btn">
+                        <img src="./images/icon-spock.svg" alt="icon-spock">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="rules" id="rules">RULES</button>
+    </div>
+    <div class="rules-container" id="rules-container">
+        <div class="rules-header flex">
+            <h2>RULES</h2>
+            <button id="close"><img src="./images/icon-close.svg" alt="icon-close"></button>
+        </div>
+        <div class="rules-body">
+            <img src="./images/image-rules-bonus.svg" alt="image-rules">
+        </div>
+    </div>
+    <audio loop autoplay>
+        <source src="./audio/music.mp3" type="audio/ogg">
+    </audio>
+    <script src="js/bonus.js"></script>
+</body>
+
+</html>

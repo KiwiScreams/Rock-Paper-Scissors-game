@@ -1,0 +1,319 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+:root
+{
+    /* Gradient */
+    --radial-gradient-light:#1f3756;
+    --radial-gradient-dark: #141539;
+    --scissors-gradiennt-from: #ec9e0e;
+    --scissors-gradiennt-to: #eca922;
+    --paper-gradient-from: #4865f4;
+    --paper-gradient-to: #5671f5;
+    --rock-gradient-from: #dc2e4e;
+    --rock-gradient-to: #dd405d;
+    --lizard-gradient-from: #834fe3;
+    --lizard-gradient-to:#8c5de5;
+    --spock-gradient-from: #40b9ce;
+    --spock-gradiet-to: #52bed1;
+    /* Colors */
+    --dark-text: #3b4363;
+    --score-text: #2a46c0;
+    --header-outline: #606e85;
+    --text: #565468;
+    --white: #fff;
+}
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body
+{
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    background: radial-gradient(var(--radial-gradient-light), var(--radial-gradient-dark));
+}
+.panel
+{
+    background-color: #07071a9b;
+    position: absolute;
+    height: 200vh;
+    width: 100vw;
+    display: none;
+    top: -50px;
+    z-index: 3;
+}
+.main-container
+{
+    width: 100%;
+}
+/* HEADER */
+.main-container .header-container
+{
+    width: 700px;
+    padding: 18px 24px;
+    margin: 0 auto;
+    border: 3px solid #ffffff47;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 28px;
+}
+.main-container .header-container .score-container
+{
+    background-color: var(--white);
+    padding: 16px 48px;
+    border-radius: 10px;
+}
+.main-container .header-container .score-container span
+{
+    color: var(--score-text);
+    font-size: 14px;
+}
+.main-container .header-container .score-container #score
+{
+    color: var(--text);
+    font-size: 40px;
+    text-align: center;
+}
+/* BODY */
+.main-container .game-container
+{
+    width: 30%;
+    margin: 0 auto;
+    background: url(./images/bg-pentagon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-wrap: wrap;
+}
+.first, .second, .third
+{
+    width: 100%;
+    margin: 0 auto;
+}
+.second
+{
+    margin-bottom: 40px;
+}
+.first .border
+{
+    margin: 0 auto;
+}
+.third
+{
+    width: 80%;
+}
+.main-container .game-container .btn
+{
+    background: linear-gradient(to right bottom, #f3f3f3, #dadada);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    box-shadow: inset 0 10px 3px #0000004d;
+}
+.main-container .game-container .border
+{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    padding: 26px;
+    overflow: hidden;
+    box-shadow: inset 0 -10px 3px #0000004d;
+    transition: 0.3s;
+}
+.main-container .game-container .border:hover
+{
+    box-shadow: 0px 0px 1px 24px #ffffff1c;
+    transition: 0.3s;
+}
+.paper
+{
+    background-image: linear-gradient(to right bottom, #4865f4, #5671f5);
+}
+.scissors
+{
+    background-image: linear-gradient(to right bottom, #ec9e0e, #eca922);
+}
+.rock
+{
+    background-image: linear-gradient(to right bottom, #dc2e4e, #dd405d);
+}
+.lizard
+{
+    background-image: linear-gradient(to right bottom, #834fe3, #8c5de5);
+}
+.spock
+{
+    background-image: linear-gradient(to right bottom, #40b9ce, #52bed1);
+}
+.main-container .text-container
+{
+    width: 700px;
+    display: none;
+    padding: 0 24px;
+    margin: 0 auto;
+    color: var(--white);
+    margin-bottom: 100px;
+}
+.main-container .game-container .computer
+{
+    width: 225px;
+    height: 225px;
+    background-color: #0000001a;
+    border-radius: 50%;
+    display: none;
+}
+.win-container
+{
+    text-align: center;
+    margin: 0 auto;
+    display: none;
+    z-index: 3;
+}
+.win-container #win-title
+{
+    color: var(--white);
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.win-container button
+{
+    padding: 14px 60px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    background: linear-gradient(to bottom, #f3f3f3, #fff);
+    box-shadow: 0 3px 3px 0 #fd2b2b32;
+    transition: 0.3s;
+}
+.win-container button:hover
+{
+    color: #DB2E4D;
+    transition: 0.3s;
+}
+.main-container .header-container
+{
+    width: 700px;
+    padding: 18px 24px;
+    margin: 0 auto;
+    border: 3px solid #ffffff47;
+    border-radius: 10px;
+    margin-bottom: 64px;
+    margin-top: 48px;
+}
+.main-container .header-container .score-container
+{
+    background-color: var(--white);
+    padding: 16px 48px;
+    border-radius: 10px;
+}
+.main-container .header-container .score-container span
+{
+    color: var(--score-text);
+    font-size: 14px;
+}
+.main-container .header-container .score-container #score
+{
+    color: var(--text);
+    font-size: 40px;
+    text-align: center;
+}
+.main-container .rules
+{
+    padding: 12px 36px;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    font-size: 16px;
+    color: var(--white);
+    background: transparent;
+    font-weight: 600;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    transition: 0.3s;
+}
+.main-container .rules:hover
+{
+    background-color: var(--white);
+    color: var(--dark-text);
+    transition: 0.3s;
+}
+.other-game
+{
+    padding: 12px 36px;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    font-size: 16px;
+    background: transparent;
+    font-weight: 600;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    color: var(--white);
+    transition: 0.3s;
+}
+.other-game:hover
+{
+    background-color: var(--white);
+    color: var(--dark-text);
+    transition: 0.3s;
+}
+.rules-container
+{
+    margin: auto;
+    display: none;
+    width: 25%;
+    padding: 32px;
+    background-color: var(--white);
+    border-radius: 10px;
+    position: absolute;
+    top: 22%;
+    left: 38%;
+    z-index: 10;
+}
+.rules-container .rules-header
+{
+    margin-bottom: 48px;
+}
+.rules-container .rules-header #close
+{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+}
+.rules-container .rules-header h2
+{
+    color: var(--dark-text);
+    font-size: 32px;
+    font-weight: 700;
+}
+.rules-container .rules-body
+{
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.rules-container .rules-body img
+{
+    width: 100%;
+}
+.main-container .game-container .computer .paper,
+.main-container .game-container .computer .rock,
+.main-container .game-container .computer .scissors,
+.main-container .game-container .computer .lizard,
+.main-container .game-container .computer .spock
+{
+    transform: scale(1.5);
+}
