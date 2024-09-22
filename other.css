@@ -10,7 +10,6 @@
 }
 :root
 {
-    /* Gradient */
     --radial-gradient-light:#1f3756;
     --radial-gradient-dark: #141539;
     --scissors-gradiennt-from: #ec9e0e;
@@ -23,7 +22,6 @@
     --lizard-gradient-to:#8c5de5;
     --spock-gradient-from: #40b9ce;
     --spock-gradiet-to: #52bed1;
-    /* Colors */
     --dark-text: #3b4363;
     --score-text: #2a46c0;
     --header-outline: #606e85;
@@ -57,7 +55,6 @@ body
 {
     width: 100%;
 }
-/* HEADER */
 .main-container .header-container
 {
     width: 700px;
@@ -85,7 +82,6 @@ body
     font-size: 40px;
     text-align: center;
 }
-/* BODY */
 .main-container .game-container
 {
     width: 30%;
